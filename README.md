@@ -32,6 +32,10 @@
 
 本記事は、タイプミスや間違いなどがあるかもしれません。その場合教えていただけますと幸いです。
 
+本記事で用いた、コードや記事の下書きは以下のページに格納されています。
+
+https://github.com/KentaItakura/blog-post-about-liner-fitting2
+
 # 2 決定係数の求め方について
 
 決定係数は、以下の図の、残差を利用して求めることができます。残差とは、予測値と実測値の差のことです。
@@ -167,7 +171,9 @@ aにさきほどの式(12)の結果を代入します。
 
 ...(14)
 
-$\frac{1}{N}\sum_{i\;=\;1}^N x_i \;=\;$<img src="https://latex.codecogs.com/gif.latex?\inline&space;\bar{x}"/> という関係であるため、
+<img src="https://latex.codecogs.com/gif.latex?\frac{1}{N}\sum_{i\;=\;1}^N&space;x_i&space;\;=\;\bar{x}"/> 
+
+という関係であるため、
 
 <img src="https://latex.codecogs.com/gif.latex?=\bar{y}&space;-\frac{S_{\textrm{xy}}&space;}{S_{\textrm{xx}}&space;}\;\bar{x}&space;\;\;"/> 
 
@@ -291,7 +297,13 @@ y = ax+bという式で回帰しているため以下のように記述できま
 
 ...(24)
 
-この式の左辺の値（残差平方和）である、<img src="https://latex.codecogs.com/gif.latex?\inline&space;\sum_{i\;=\;1}^N&space;{\left\lbrace&space;y_i&space;-\left({\textrm{ax}}_i&space;+b\right)\right\rbrace&space;}^2&space;\;"/>を${\;S}_e$とします。
+この式の左辺の値（残差平方和）である、<img src="https://latex.codecogs.com/gif.latex?\inline&space;\sum_{i\;=\;1}^N&space;{\left\lbrace&space;y_i&space;-\left({\textrm{ax}}_i&space;+b\right)\right\rbrace&space;}^2&space;\;"/>を
+
+<img src="https://latex.codecogs.com/gif.latex?{\;S}_e"/>
+
+  
+
+とします。
 
 すると、　　　    　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<img src="https://latex.codecogs.com/gif.latex?\inline&space;{\;S}_{\textrm{yy}}&space;=aS_{\textrm{xy}}&space;+{\;S}_e"/>
 
@@ -313,7 +325,9 @@ y = ax+bという式で回帰しているため以下のように記述できま
 
 そして、
 
-<img src="https://latex.codecogs.com/gif.latex?\inline&space;\sum_{i\;=\;1}^N&space;{\left\lbrace&space;y_i&space;-\left({\textrm{ax}}_i&space;+b\right)\right\rbrace&space;}^2&space;\;"/>を${\;S}_e$とした場合、
+<img src="https://latex.codecogs.com/gif.latex?\sum_{i\;=\;1}^N&space;{\left\lbrace&space;y_i&space;-\left({\textrm{ax}}_i&space;+b\right)\right\rbrace&space;}^2&space;\;"/>
+
+を<img src="https://latex.codecogs.com/gif.latex?\inline&space;{\;S}_e"/>とした場合、
 
 <img src="https://latex.codecogs.com/gif.latex?{\;S}_{\textrm{yy}}&space;={\;S}_e&space;+S_R"/>　
 
